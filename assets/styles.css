@@ -226,6 +226,20 @@ footer {
 }
 
 /* ==========================
+Footer Links
+========================== */
+
+footer a {
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #F4F1EA;
+  text-decoration: underline;
+}
+
+/* ==========================
 Mobile
 ========================== */
 
