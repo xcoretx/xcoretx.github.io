@@ -1,1 +1,227 @@
+/* ==========================
+xCoreTX Global Styles
+Shared System Stylesheet
+========================== */
 
+/* Base Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  background-color: #F4F1EA;
+  color: #2D2D2D;
+}
+
+/* ==========================
+Layout Container
+========================== */
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: #FFFFFF;
+  border: 1px solid #D7D1C7;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* ==========================
+Sections
+========================== */
+
+section {
+  padding: 40px;
+}
+
+/* ==========================
+Typography
+========================== */
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #556B5D;
+}
+
+h2 {
+  color: #556B5D;
+  border-bottom: 2px solid #E6E1D8;
+  padding-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* ==========================
+Links
+========================== */
+
+a {
+  color: #556B5D;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+HERO (index page only)
+========================== */
+
+#hero {
+  text-align: center;
+  background: #E8EFE8;
+  padding: 60px 40px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.motto {
+  margin-top: 20px;
+  color: #444;
+}
+
+.hero-divider {
+  width: 60%;
+  margin: 25px auto;
+  border: 0;
+  border-top: 1px solid #D7D1C7;
+}
+
+.mission {
+  max-width: 800px;
+  margin: 25px auto 0 auto;
+  text-align: center;
+}
+
+/* ==========================
+Navigation Buttons (index)
+========================== */
+
+.nav-buttons {
+  margin-top: 30px;
+}
+
+.nav-buttons a {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 18px;
+  background: #556B5D;
+  color: white;
+  border-radius: 4px;
+}
+
+.nav-buttons a:hover {
+  background: #425448;
+}
+
+/* ==========================
+Resource Cards (used everywhere)
+========================== */
+
+.resource-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-left: 3px solid #556B5D;
+  background: #FAFAF7;
+}
+
+.resource-card a {
+  font-weight: bold;
+  color: #2D3A33;
+}
+
+.resource-card p {
+  margin: 5px 0 0 0;
+  color: #555;
+}
+
+/* ==========================
+Back Button (subpages)
+========================== */
+
+.back {
+  text-align: center;
+  margin: 20px;
+}
+
+.back a {
+  font-weight: bold;
+}
+
+/* ==========================
+Tables (projects)
+========================== */
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.projects-table th,
+.projects-table td {
+  border: 1px solid #DDD;
+  padding: 12px;
+  text-align: left;
+}
+
+.projects-table th {
+  background: #F3F0EA;
+}
+
+/* ==========================
+Lists
+========================== */
+
+ul {
+  padding-left: 20px;
+}
+
+/* ==========================
+Footer
+========================== */
+
+footer {
+  text-align: center;
+  background: #556B5D;
+  color: white;
+  padding: 25px;
+}
+
+/* ==========================
+Mobile
+========================== */
+
+@media (max-width: 768px) {
+  
+  body {
+    padding: 15px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-buttons a {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+  }
+}
