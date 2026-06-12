@@ -4,6 +4,7 @@ Shared System Stylesheet
 ========================== */
 
 /* Base Reset */
+
 * {
   box-sizing: border-box;
 }
@@ -42,7 +43,9 @@ section {
 Typography
 ========================== */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 0;
 }
 
@@ -75,7 +78,7 @@ a:hover {
 }
 
 /* ==========================
-HERO (index page only)
+Homepage Hero
 ========================== */
 
 #hero {
@@ -108,7 +111,27 @@ HERO (index page only)
 }
 
 /* ==========================
-Navigation Buttons (index)
+Internal Page Header
+========================== */
+
+.page-header {
+  text-align: center;
+  background: #E8EFE8;
+  padding: 50px 40px;
+  border-bottom: 1px solid #D7D1C7;
+}
+
+.page-header h1 {
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* ==========================
+Navigation Buttons
 ========================== */
 
 .nav-buttons {
@@ -126,10 +149,23 @@ Navigation Buttons (index)
 
 .nav-buttons a:hover {
   background: #425448;
+  text-decoration: none;
 }
 
 /* ==========================
-Resource Cards (used everywhere)
+Back Navigation
+========================== */
+
+.back {
+  margin-top: 15px;
+}
+
+.back a {
+  font-weight: bold;
+}
+
+/* ==========================
+Resource Cards
 ========================== */
 
 .resource-card {
@@ -150,20 +186,7 @@ Resource Cards (used everywhere)
 }
 
 /* ==========================
-Back Button (subpages)
-========================== */
-
-.back {
-  text-align: center;
-  margin: 20px;
-}
-
-.back a {
-  font-weight: bold;
-}
-
-/* ==========================
-Tables (projects)
+Projects Table
 ========================== */
 
 .projects-table {
@@ -206,7 +229,7 @@ Mobile
 ========================== */
 
 @media (max-width: 768px) {
-  
+
   body {
     padding: 15px;
   }
@@ -224,4 +247,5 @@ Mobile
     margin: 10px auto;
     max-width: 200px;
   }
+
 }
