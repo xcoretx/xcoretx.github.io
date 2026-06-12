@@ -3,123 +3,320 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>xCoreTX</title>
+  
   <style>
-    /* Global Styles */
+    
+    /* ==========================
+    Global Styles
+    ========================== */
+    
     body {
       margin: 0;
+      padding: 40px;
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.6;
-      color: #1a1a1a;
-      background: #fefefe;
+      line-height: 1.7;
+      background-color: #F4F1EA;
+      color: #2D2D2D;
     }
-    a { color: #0077cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    section { padding: 60px 20px; max-width: 900px; margin: auto; }
-    h1, h2, h3 { margin-bottom: 20px; }
-    h1 { font-size: 2.5rem; color: #004466; }
-    h2 { font-size: 2rem; color: #006699; }
-    h3 { font-size: 1.5rem; color: #004466; }
-    p { margin-bottom: 20px; }
+    
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #FFFFFF;
+      border: 1px solid #D7D1C7;
+      box-shadow: 0 3px 10px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
 
-    /* Nav Section */
-    #nav {
-      text-align: center;
-      background: #e0f3ff;
-      padding: 100px 20px;
+    section {
+      padding: 50px;
     }
-    #nav h1 { font-size: 3rem; }
-    #nav p { font-size: 1.3rem; margin-top: 10px; color: #004466; }
-    .nav-buttons a {
-      display: inline-block;
-      margin: 10px 15px;
-      padding: 12px 25px;
-      background: #0077cc;
-      color: white;
-      border-radius: 5px;
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #556B5D;
+    }
+
+    h2 {
+      color: #556B5D;
+      border-bottom: 2px solid #E6E1D8;
+      padding-bottom: 10px;
+    }
+
+    a {
+      color: #556B5D;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ==========================
+    Hero Section
+    ========================== */
+    
+    #hero {
+      text-align: center;
+      background: #E8EFE8;
+      padding: 45px 40px;
+    }
+
+    #hero p {
+      margin: 10px 0;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
       font-weight: bold;
     }
-    .nav-buttons a:hover { background: #005f99; }
-
-    /* Section Styles */
-    #about, #labs, #notes, #resources {
-      background: #fefefe;
+    
+    .motto {
+      margin-top: 20px;
+      color: #444;
     }
-    .labs-table, {
+
+    .hero-divider {
+      width: 60%;
+      margin: 25px auto;
+      border: 0;
+      border-top: 1px solid #D7D1C7;
+    }
+
+    .mission {      
+      margin-top: 25px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ==========================
+    Navigation
+    ========================== */
+
+    .nav-buttons {
+      margin-top: 30px;
+    }
+
+    .nav-buttons a {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 18px;
+      background: #556B5D;
+      color: white;
+      border-radius: 4px;
+    }
+
+    .nav-buttons a:hover {
+      background: #425448;
+      text-decoration: none;
+    }
+
+    /* ==========================
+    Projects Table
+    ========================== */
+
+    .projects-table {
       width: 100%;
       border-collapse: collapse;
     }
-    .labs-table th, .labs-table td, {    
-      border: 1px solid #ddd;
+
+    .projects-table th,
+    .projects-table td {
+      border: 1px solid #DDD;
       padding: 12px;
       text-align: left;
     }
-    .labs-table th, { background: #e0f3ff; color: #004466; }
 
-    /* Footer */
-    footer {
-      background: #004466;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
+    .projects-table th {
+      background: #F3F0EA;
     }
 
-    /* Responsive */
-    @media(max-width: 600px){
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1.5rem; }
-      .nav-buttons a { display: block; margin: 10px auto; }
+    /* ==========================
+    Lists
+    ========================== */
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* ==========================
+    Footer
+    ========================== */
+
+    footer {
+      text-align: center;
+      background: #556B5D;
+      color: white;
+      padding: 25px;
+    }
+
+    /* ==========================
+    Mobile
+    ========================== */
+
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+      
+      section {
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .nav-buttons a {
+        display: block;
+        margin: 10px auto;
+        max-width: 200px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Nav Section -->
-  <section id="nav">
-    <h1>xCoreTX</h1>
-    <p>Learn. Apply. Grow.</p>
-    <div class="nav-buttons">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#labs">Labs</a>
-      <a href="#notes">Notes</a>
-      <a href="#resources">Resources</a>
-    </div>
-  </section>
+  <div class="container">
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p></p>
-  </section>
+    <!-- HERO -->
 
-  <!-- Labs Section -->
-  <section id="labs">
-    <h2>Labs</h2>
-    <table class="projects-table">
-      <tr>
-        <th>Lab</th>
-        <th>Action</th>
-        <th>Outcome</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
-  </section>
+    <section id="hero">
 
-  <!-- Footer -->
-  <footer>
-    Learn. Apply. Grow. | &copy; 2026
-  </footer>
+      <h1>xCoreTX</h1>
+
+      <p class="tagline">Learn. Apply. Grow.</p>
+
+      
+      <div class="motto">
+        Driven by curiosity.<br>
+        Striving for mastery.<br>
+        Focused on the journey&mdash;not just the results.
+      </div>
+
+      <hr class="hero-divider">
+
+      <p class="mission">
+        A systems-oriented learning platform documenting
+        hands-on exploration of:<br>
+        routing & switching, Linux, infrastructure, automation, and security.
+      </p>
+
+      <div class="nav-buttons">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#notes">Notes</a>
+        <a href="#resources">Resources</a>
+      </div>
+    
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+      
+      <h2>About Me</h2>
+
+      <p>
+        xCoreTX is a personal learning platform and technical journal
+        focused on understanding how systems behave in practice,
+        not just in theory.
+      </p>
+
+      <p>
+        Inspired by the concept of continuous growth and development,
+        xCoreTX serves as a living record of technical learning,
+        experimentation, troubleshooting, and reflection.
+      </p>
+
+      <p>
+        My primary areas of focus include routing & switching, Linux,
+        infrastructure, automation, and security.
+      </p>
+    
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+      <h2>Projects</h2>
+
+      <table class="projects-table">
+
+        <tr>
+          <th>Project</th>
+          <th>Description</th>
+          <th>Status</th>
+        </tr>
+
+        <tr>
+          <td>Home Lab Network Project v1</td>
+          <td>Enterprise-style home network design and implementation.</td>
+          <td>Planned</td>
+        </tr>
+        
+      </table>
+    
+    </section>
+
+    <!-- NOTES -->
+
+    <section id="notes">
+
+      <h2>Notes</h2>
+
+      <p>
+        Technical observations, lessons learned, troubleshooting
+        experiences, and study notes collected through active learning.
+      </p>
+      <!--
+      <ul>
+        <li>CCNP Enterprise Studies</li>
+        <li>Linux Administration Notes</li>
+        <li>Networking Concepts</li>
+        <li>Automation Experiments</li>
+        <li>Security Fundamentals</li>
+      </ul>
+      -->
+      
+    </section>
+
+    <!-- RESOURCES -->
+
+    <section id="resources">
+
+      <h2>Resources</h2>
+
+      <ul>
+        <li>Technical Podcasts</li>
+        <li>PacketLife Cheat Sheets</li>
+        <li>Veteran Resources</li>
+        <li>Books & Learning Platforms</li>
+        <li>Reference Materials</li>
+      </ul>
+    
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      Learn. Apply. Grow.<br>
+      &copy; 2026 xCoreTX
+    
+    </footer>
+  
+  </div>
 
 </body>
 </html>
