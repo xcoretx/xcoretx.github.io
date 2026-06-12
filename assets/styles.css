@@ -157,11 +157,12 @@ Back Navigation
 ========================== */
 
 .back {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .back a {
   font-weight: bold;
+  font-size: 0.95rem;
 }
 
 /* ==========================
